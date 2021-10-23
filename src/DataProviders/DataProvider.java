@@ -21,7 +21,7 @@ public class DataProvider {
         
         for (int i = 0; i < numberOfRounds; i++) {
             var firstHit = getRandomInteger(10);
-            var secondHit= 10 - firstHit;//getRandomInteger(10-firstHit);
+            var secondHit= getRandomInteger(10-firstHit);
             
             rounds[i] = new int[]{firstHit, secondHit};
         }
